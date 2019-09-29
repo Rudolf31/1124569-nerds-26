@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Нёрдс каталог </title>
   </head>
   <body>
@@ -11,60 +12,70 @@
         <ul>
           <li><a href="">студия</a></li>
           <li><a href="">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
+          <li><a>магазин</a></li>
           <li><a href="">контакты</a></li>
         </ul>
         <ul>
-          <li><a href=""><img src="img/cart-icon.svg">корзина</a></li>
+          <li><a href="">корзина</a></li>
         </ul>
       </nav>
-      <h1>магазин готовых шаблонов</h1>
+      
     </header>
     <main>
-      <p>Сетка:</p>
-      <label>
-        <input type="radio" name="Сетка" value="Адаптивная">Адаптивная
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="Сетка" value="Фиксированная">Фиксированная
-      </label>
-      <br>
-      <label>
-        <input type="radio" name="Сетка" value="Резиновая">Резиновая
-      </label>
-      <p>Особенности:</p>
-      <label>
-        <input type="checkbox" name="Слайдер">Слайдер
-      </label>
-      <br>
-      <label>
-        <input type="checkbox" name="Блок преимуществ">Блок преимуществ
-      </label>
-      <br>
-      <label>
-        <input type="checkbox" name="Новости">Новости
-      </label>
-      <br>
-      <label>
-        <input type="checkbox" name="Галерея">Галерея
-      </label>
-      <br>
-      <label>
-        <input type="checkbox" name="Корзина">Корзина
-      </label>
-      <br>
       <form>
+        <p>Сетка:</p>
+        <label>
+          <input type="radio" name="Сетка" value="Адаптивная">Адаптивная
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="Сетка" value="Фиксированная">Фиксированная
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="Сетка" value="Резиновая">Резиновая
+        </label>
+        <p>Особенности:</p>
+        <label>
+          <input type="checkbox" name="Слайдер">Слайдер
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="Блок преимуществ">Блок преимуществ
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="Новости">Новости
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="Галерея">Галерея
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="Корзина">Корзина
+        </label>
+        <br>
         <button>Показать</button>
       </form>
-        <img src="img/img-sedona.jpg" alt="">
-        <img src="img/img-pink.jpg" alt="">
-        <img src="img/img-barbershop.jpg" alt="">
-        <img src="img/img-mishka.jpg" alt="">
-        <img src="img/img-aplus.jpg" alt="">
-        <img src="img/img-kvast.jpg" alt="">
+      <h1 class="visually-hidden">магазин готовых шаблонов</h1>
+      <img src="img/img-sedona.jpg" alt="">
+      <img src="img/img-pink.jpg" alt="">
+      <img src="img/img-barbershop.jpg" alt="">
+      <img src="img/img-mishka.jpg" alt="">
+      <img src="img/img-aplus.jpg" alt="">
+      <img src="img/img-kvast.jpg" alt="">
     </main>
     <footer>
+      <div>
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,</p> 
+        <p>ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>  
+        <form>
+          <button>напишите нам</button>
+        </form>
+      </div>
       <div>
         <ul>
           <li><a href=""><img src="img/vk-icon.svg" alt="">Вконтакте</a></li>
@@ -75,5 +86,29 @@
       <p>давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+    <h2>напишите нам</h2>
+    <button type="button" aria-label="Закрыть">X</button>
+    <br>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <p>
+        <label for="nameandsurname">Ваше имя:</label>
+        <br>
+        <input id="nameandsurname" type="text"
+          name="nameandsurname" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-login">Ваш e-mail:</label>
+        <br>
+        <input id="user-login" type="text"
+               name="login" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-letter">Текст письма:</label>
+        <br>
+        <input id="user-letter" type="text"
+          name="letter" placeholder="В свободной форме">
+      </p>
+      <button type="submit">отправить</button>
+    </form>
   </body>
 </html>
