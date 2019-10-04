@@ -1,6 +1,6 @@
 body {
-  padding: 80px 100px;
-  font-family: sans-serif;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .visually-hidden {
@@ -13,3 +13,299 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation {
+list-style: none;
+}
+
+.main-navigation {
+ background-color: #e7e7e7;
+}
+
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus {
+  color: #a6a6a6;
+}
+
+/*.site-navigation a:active {
+text-decoration: underline;
+}*/
+
+.atelier {
+  font-size: 15px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  position: absolute;
+  left: 500px;
+  top: 65px;
+}
+
+.clientele {
+  font-size: 15px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  position: absolute;
+  left: 610px;
+  top: 65px;
+}
+
+.shop {
+  font-size: 15px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  position: absolute;
+  left: 735px;
+  top: 65px;
+}
+
+.contacts {
+    font-size: 15px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  position: absolute;
+  left: 855px;
+  top: 65px;
+}
+
+.cart {
+  font-size: 15px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  position: absolute;
+  left: 1225px;
+  top: 65px; 
+}
+
+.orders li {
+  list-style: none;
+}
+
+.button {
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.social-network {
+  list-style: none;
+}
+
+.websites::before {
+  padding-top: px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 146px;
+  background: url("../img/illustration-1.jpg");
+  }
+
+.websites {
+  position: absolute;
+  font-size: 25px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 140px;
+  top: 804px;
+}
+
+.applications::before {
+  padding-top: px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 146px;
+  background: url("../img/illustration-2.jpg");
+  }
+
+.applications {
+  position: absolute;
+  font-size: 25px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 540px;
+  top: 806.221px;
+}
+
+.presentations::before {
+  padding-top: px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 146px;
+  background: url("../img/illustration-3.jpg");
+  }
+
+.presentations {
+  font-size: 25px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  left: 940px;
+  top: 815.917px;
+} 
+ 
+.content1 {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(40, 49, 54);
+  position: absolute;
+  left: 139px;
+  top: 868px;
+  width: 238px;
+  height: 41px;
+}
+.content2 {
+    font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(40, 49, 54);
+  position: absolute;
+  left: 540px;
+  top: 868px;
+  width: 239px;
+  height: 40px;
+}
+.content3 {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(40, 49, 54);
+  position: absolute;
+  left: 939.937px;
+  top: 868.509px;
+  width: 213px;
+  height: 40px; 
+}
+
+.cart {
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.cart::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: url('../img/cart-icon.svg');
+}
+
+.button-orders1 {
+  position: absolute;
+  left: 140px;
+  top: 965px;
+  width: 160px;
+  height: 50px;
+  background-color: #fb565a;
+  border-color: #fff;
+}
+
+.button-orders2 {
+  position: absolute;
+  left: 540px;
+  top: 965px;
+  width: 160px;
+  height: 50px;
+  background-color: #00ca74;
+  border-color: #fff;
+}
+.button-orders3 {
+  position: absolute;
+  left: 940px;
+  top: 965px;
+  width: 160px;
+  height: 50px;
+  background-color: #efc84a;
+  border-color: #fff;
+}
+
+.button-orders1:hover {
+  background-color: #e74246;
+}
+
+.button-orders2:hover {
+ background-color: #00bc6c;
+}
+
+.button-orders3:hover {
+ background-color: #eab534;
+}
+
+.button-orders1:focus {
+  background-color: #d7373b;
+  color: #e37376;
+}
+
+  .button-orders2:focus {
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+  .button-orders3:focus {
+  background-color: #e5a722;
+  color: #edc265;
+}
+
+  .letsbefriends {
+  font-size: 35px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 0;
+  position: absolute;
+  left: 540px;
+  top: 2337px;
+}
+
+  .discount {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(68, 68, 68);
+  width: 343px;
+  height: 16px;
+}
+
+  .we1 {
+  font-size: 45.5px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  width: 700px;
+  font-weight: bold;
+}
+
+.we2 {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(40, 49, 54);
+  width: 616px;
+  height: 40px;
+  font-weight: medium;
+}
+
+
+
