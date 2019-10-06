@@ -1,8 +1,9 @@
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-}
+  margin: 0;
 
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -12,6 +13,13 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 a {
@@ -26,7 +34,7 @@ a {
 list-style: none;
 }
 
-.main-navigation {
+.main-header {
  background-color: #e7e7e7;
 }
 
@@ -38,44 +46,30 @@ list-style: none;
   color: #a6a6a6;
 }
 
-/*.site-navigation a:active {
-text-decoration: underline;
-}*/
-
 .atelier {
   font-size: 15px;
   font-family: "Roboto";
   text-transform: uppercase;
-  position: absolute;
-  left: 500px;
-  top: 65px;
 }
 
 .clientele {
   font-size: 15px;
   font-family: "Roboto";
   text-transform: uppercase;
-  position: absolute;
-  left: 610px;
-  top: 65px;
+
 }
 
 .shop {
   font-size: 15px;
   font-family: "Roboto";
   text-transform: uppercase;
-  position: absolute;
-  left: 735px;
-  top: 65px;
+ 
 }
 
 .contacts {
     font-size: 15px;
   font-family: "Roboto";
   text-transform: uppercase;
-  position: absolute;
-  left: 855px;
-  top: 65px;
 }
 
 .cart {
@@ -92,7 +86,7 @@ text-decoration: underline;
 }
 
 .button {
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
   font-size: 15px;
 }
@@ -102,57 +96,44 @@ text-decoration: underline;
 }
 
 .websites::before {
-  padding-top: px;
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  padding-top: 0px;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-1.jpg");
   }
 
 .websites {
-  position: absolute;
+  
+  position: relative;
   font-size: 25px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
-  position: absolute;
-  left: 140px;
-  top: 804px;
 }
 
 .applications::before {
-  padding-top: px;
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-2.jpg");
   }
 
 .applications {
-  position: absolute;
+  position: relative;
   font-size: 25px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
-  position: absolute;
-  left: 540px;
-  top: 806.221px;
 }
 
 .presentations::before {
-  padding-top: px;
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-3.jpg");
@@ -164,18 +145,13 @@ text-decoration: underline;
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
-  position: absolute;
-  left: 940px;
-  top: 815.917px;
+  position: relative;
 } 
  
 .content1 {
   font-size: 16px;
   font-family: "Roboto";
   color: rgb(40, 49, 54);
-  position: absolute;
-  left: 139px;
-  top: 868px;
   width: 238px;
   height: 41px;
 }
@@ -183,9 +159,6 @@ text-decoration: underline;
     font-size: 16px;
   font-family: "Roboto";
   color: rgb(40, 49, 54);
-  position: absolute;
-  left: 540px;
-  top: 868px;
   width: 239px;
   height: 40px;
 }
@@ -193,9 +166,6 @@ text-decoration: underline;
   font-size: 16px;
   font-family: "Roboto";
   color: rgb(40, 49, 54);
-  position: absolute;
-  left: 939.937px;
-  top: 868.509px;
   width: 213px;
   height: 40px; 
 }
@@ -206,6 +176,7 @@ text-decoration: underline;
 }
 
 .cart::before {
+  opacity: 0.3;
   content: '';
   position: absolute;
   top: 0;
@@ -216,32 +187,23 @@ text-decoration: underline;
 }
 
 .button-orders1 {
-  position: absolute;
-  left: 140px;
-  top: 965px;
   width: 160px;
   height: 50px;
   background-color: #fb565a;
-  border-color: #fff;
+  border: none;
 }
 
 .button-orders2 {
-  position: absolute;
-  left: 540px;
-  top: 965px;
   width: 160px;
   height: 50px;
   background-color: #00ca74;
-  border-color: #fff;
+  border: none;
 }
 .button-orders3 {
-  position: absolute;
-  left: 940px;
-  top: 965px;
   width: 160px;
   height: 50px;
   background-color: #efc84a;
-  border-color: #fff;
+  border: none;
 }
 
 .button-orders1:hover {
@@ -259,16 +221,19 @@ text-decoration: underline;
 .button-orders1:focus {
   background-color: #d7373b;
   color: #e37376;
+  outline: none;
 }
 
   .button-orders2:focus {
   background-color: #00aa62;
   color: #4dc491;
+  outline: none;
 }
 
   .button-orders3:focus {
   background-color: #e5a722;
   color: #edc265;
+  outline: none;
 }
 
   .letsbefriends {
@@ -276,10 +241,7 @@ text-decoration: underline;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   font-weight: bold;
-  line-height: 0;
-  position: absolute;
-  left: 540px;
-  top: 2337px;
+  line-height: 1;
 }
 
   .discount {
@@ -304,8 +266,143 @@ text-decoration: underline;
   color: rgb(40, 49, 54);
   width: 616px;
   height: 40px;
-  font-weight: medium;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #283136;
 }
 
+.we3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5;
+}
 
+.transfer li {
+  font-weight: normal;
+  color: #283136;
+}
 
+.map {
+margin: 0;
+}
+
+.since2004 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 16px;
+  }
+
+.percents {
+  list-style: none;
+}
+
+.percents li:nth-child(odd) {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.percents li:nth-child(even) {
+  font-weight: normal;
+  font-size: 16px;
+  width: 10px;
+}
+
+.company {
+ opacity: 0.2;
+}
+
+.company:hover {
+ opacity: 1;
+}
+
+.company:active {
+ opacity: 0.1;
+}
+
+.instagram{
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  width: 79px;
+  height: 79px;
+  font-size: 0;
+}
+
+.vkontakte {
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  width: 79px;
+  height: 79px;
+  font-size: 0;
+}
+
+.facebook {
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  width: 79px;
+  height: 79px;
+  font-size: 0;
+}
+
+.aboutus1{
+color: rgb(102, 102, 102);
+} 
+ 
+.aboutus1 a{
+color: rgb(102, 102, 102);
+} 
+
+.button-writetous {
+  width: 220px;
+  height: 50px;
+  background-color: #fb565a;
+  border: none;
+  font-size: 20px;
+}
+
+.button-writetous:hover {
+  background-color: #e74246;
+}
+
+.button-writetous:focus {
+  background-color: #d7373b;
+  outline: none;
+
+}
+
+.button-send {
+  width: 210px;
+  height: 50px;
+  background-color: #fb565a;
+  border: none;
+  font-size: 20px;
+}
+
+.writetous {
+font-size: 43px;
+}
+
+.popap {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.button-show {
+  width: 250px;
+  height: 50px;
+  background-color: #e7e7e7;
+  border: none;
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.button-show:hover {
+  background-color: #dfdfdf;
+}
+
+.button-show:focus {
+  background-color: #d5d5d5;
+  outline: none;
+}

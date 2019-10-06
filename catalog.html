@@ -8,98 +8,106 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="main-navigation">
-        <a href="index.html"><img src="img/nerds-logo.svg" width="100" height="100" alt="логотип"></a>
-        <ul class="site-navigation">
-          <li class="atelier"><a href="" >студия</a></li>
-          <li class="clientele"><a href="" >клиенты</a></li>
-          <li class="shop"><a>магазин</a></li>
-          <li class="contacts"><a href="">контакты</a></li>
-        </ul>
-        <ul>
-          <li class="cart site-navigation"><a href="">корзина</a></li>
-        </ul>
-      </nav>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <a href="index.html"><img src="img/nerds-logo.svg" width="100" height="100" alt="логотип"></a>
+          <ul class="site-navigation">
+            <li class="atelier"><a href="" >студия</a></li>
+            <li class="clientele"><a href="" >клиенты</a></li>
+            <li class="shop"><a>магазин</a></li>
+            <li class="contacts"><a href="">контакты</a></li>
+          </ul>
+          <ul>
+            <li class="cart site-navigation"><a href="">корзина</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <form>
-        <fieldset>
-          <legend>Сетка:</legend>
-          <label>
-            <input type="radio" name="Сетка" value="Адаптивная">Адаптивная
-          </label>
-          <label>
-            <input type="radio" name="Сетка" value="Фиксированная">Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="Сетка" value="Резиновая">Резиновая
-          </label>
-          <p>Особенности:</p>
-          <label>
-            <input type="checkbox" name="Слайдер">Слайдер
-          </label>
-          <label>
-            <input type="checkbox" name="Блок преимуществ">Блок преимуществ
-          </label>
-          <label>
-            <input type="checkbox" name="Новости">Новости
-          </label>
-          <label>
-            <input type="checkbox" name="Галерея">Галерея
-          </label>
-          <label>
-            <input type="checkbox" name="Корзина">Корзина
-          </label>
-          <button>Показать</button>
-        <fieldset>
-      </form>
-      <h1 class="visually-hidden">магазин готовых шаблонов</h1>
-      <img src="img/img-sedona.jpg" alt="шаблон-седона">
-      <img src="img/img-pink.jpg" alt="пинк">
-      <img src="img/img-barbershop.jpg" alt="шаблон-барбершоп бородинский">
-      <img src="img/img-mishka.jpg" alt="шаблон-мишка">
-      <img src="img/img-aplus.jpg" alt="шаблон-а+">
-      <img src="img/img-kvast.jpg" alt="шаблон-квас">
+      <div class="container">
+        <form>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <label>
+              <input type="radio" name="Сетка" value="Адаптивная">Адаптивная
+            </label>
+            <label>
+              <input type="radio" name="Сетка" value="Фиксированная">Фиксированная
+            </label>
+            <label>
+              <input type="radio" name="Сетка" value="Резиновая">Резиновая
+            </label>
+            <p>Особенности:</p>
+            <label>
+              <input type="checkbox" name="Слайдер">Слайдер
+            </label>
+            <label>
+              <input type="checkbox" name="Блок преимуществ">Блок преимуществ
+            </label>
+            <label>
+              <input type="checkbox" name="Новости">Новости
+            </label>
+            <label>
+              <input type="checkbox" name="Галерея">Галерея
+            </label>
+            <label>
+              <input type="checkbox" name="Корзина">Корзина
+            </label>
+            <button class="button button-show">показать</button>
+          <fieldset>
+        </form>
+        <h1 class="visually-hidden">магазин готовых шаблонов</h1>
+        <img src="img/img-sedona.jpg" alt="шаблон-седона">
+        <img src="img/img-pink.jpg" alt="пинк">
+        <img src="img/img-barbershop.jpg" alt="шаблон-барбершоп бородинский">
+        <img src="img/img-mishka.jpg" alt="шаблон-мишка">
+        <img src="img/img-aplus.jpg" alt="шаблон-а+">
+        <img src="img/img-kvast.jpg" alt="шаблон-квас">
+      <div>
     </main>
     <footer>
-      <div>
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>191186, Санкт-Петербург,</p> 
-        <p>ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75<a></p>  
-        <form>
-          <a href="">напишите нам</a>
-        </form>
+      <div class="container">
+        <div>
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p class="aboutus1">191186, Санкт-Петербург,</p> 
+          <p class="aboutus1">ул. Б. Конюшенная, д. 19/8</p>
+          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p><form>
+          <button class="button button-writetous">напишите нам</button>
+          </form>
+        </div>
+        <div>
+          <ul class="social-network">
+            <li class="vkontakte"><a href=""><img src="img/vk-icon.svg"  alt="">Вконтакте</a></li>
+            <li class="facebook"><a href=""><img src="img/fb-icon.svg"  alt="">Фейсбук</a></li>
+            <li class="instagram"><a href=""><img src="img/insta-icon.svg" alt="" >Инстаграм</a></li>
+          </ul>
+        </div>
+        <p class="letsbefriends">давайте дружить, это выгодно!</p>
+        <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      <div>
-        <ul>
-          <li><a href=""><img src="img/vk-icon.svg" alt="">Вконтакте</a></li>
-          <li><a href=""><img src="img/fb-icon.svg" alt="">Фейсбук</a></li>
-          <li><a href=""><img src="img/insta-icon.svg" alt="">Инстаграм</a></li>
-        </ul>
-      </div>
-      <p class="letsbefriends">давайте дружить, это выгодно!</p>
-      <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-    <h2 class="visually-hidden">напишите нам</h2>
+    <h2 class="writetous">Напишите нам</h2>
     <button type="button" aria-label="Закрыть">X</button>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <br>
+    <form action="https://echo.htmlacademy.ru" method="get">
       <p>
-        <label for="nameandsurname">Ваше имя:</label>
+        <label for="nameandsurname" class="popap">Ваше имя:</label>
         <input id="nameandsurname" type="text"
           name="nameandsurname" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for="user-login">Ваш e-mail:</label>
-        <input id="user-login" type="email"               name="login" placeholder="email@example.com">
+        <label for="user-login" class="popap">Ваш e-mail:</label>
+        <br>
+        <input id="user-login" type="text"
+               name="login" placeholder="email@example.com">
       </p>
       <p>
-        <label for="user-letter">Текст письма:</label>
+        <label for="user-letter" class="popap">Текст письма:</label>
         <textarea id="" name="letter" placeholder="В свободной форме">
         </textarea>
       </p>
-      <button type="submit">отправить</button>
+      <button type="submit" class="button button-send">отправить</button>
     </form>
   </body>
 </html>
