@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 
 }
 .visually-hidden {
@@ -20,6 +20,11 @@ body {
   padding: 0 20px;
   width: 100%;
   max-width: 1200px;
+}
+
+.logo1 {
+  width: 160px;
+  height: 65px;
 }
 
 a {
@@ -46,39 +51,21 @@ list-style: none;
   color: #a6a6a6;
 }
 
-.atelier {
-  font-size: 15px;
+.menu {
+  font-size: 16px;
   font-family: "Roboto";
   text-transform: uppercase;
-}
-
-.clientele {
-  font-size: 15px;
-  font-family: "Roboto";
-  text-transform: uppercase;
-
-}
-
-.shop {
-  font-size: 15px;
-  font-family: "Roboto";
-  text-transform: uppercase;
- 
-}
-
-.contacts {
-    font-size: 15px;
-  font-family: "Roboto";
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .cart {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Roboto";
   text-transform: uppercase;
   position: absolute;
   left: 1225px;
   top: 65px; 
+  font-weight: bold;
 }
 
 .orders li {
@@ -284,6 +271,7 @@ list-style: none;
 
 .map {
 margin: 0;
+float: center;
 }
 
 .since2004 {
@@ -321,28 +309,14 @@ margin: 0;
  opacity: 0.1;
 }
 
-.instagram{
+.social-icon{
   border-radius: 50%;
   background-color: #e1e1e1;
   width: 79px;
   height: 79px;
-  font-size: 0;
-}
-
-.vkontakte {
-  border-radius: 50%;
-  background-color: #e1e1e1;
-  width: 79px;
-  height: 79px;
-  font-size: 0;
-}
-
-.facebook {
-  border-radius: 50%;
-  background-color: #e1e1e1;
-  width: 79px;
-  height: 79px;
-  font-size: 0;
+  font-size: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutus1{
@@ -354,11 +328,22 @@ color: rgb(102, 102, 102);
 } 
 
 .button-writetous {
-  width: 220px;
-  height: 50px;
   background-color: #fb565a;
-  border: none;
-  font-size: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 19px;
+  padding-top: 19px;
+  border-radius: 3px;
+}
+
+a span {
+  color: white;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercas
 }
 
 .button-writetous:hover {

@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс каталог </title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a href="index.html"><img src="img/nerds-logo.svg" width="100" height="100" alt="логотип"></a>
+          <a href="index.html"><img src="img/nerds-logo.svg" alt="логотип" class="logo1"></a>
           <ul class="site-navigation">
-            <li class="atelier"><a href="" >студия</a></li>
-            <li class="clientele"><a href="" >клиенты</a></li>
-            <li class="shop"><a>магазин</a></li>
-            <li class="contacts"><a href="">контакты</a></li>
+            <li class="menu"><a href="" >студия</a></li>
+            <li class="menu"><a href="">клиенты</a></li>
+            <li class="menu"><a href="catalog.html">магазин</a></li>
+            <li class="menu"><a href="">контакты</a></li>
           </ul>
           <ul>
             <li class="cart site-navigation"><a href="">корзина</a></li>
@@ -29,30 +29,30 @@
         <form>
           <fieldset>
             <legend>Сетка:</legend>
-            <label>
-              <input type="radio" name="Сетка" value="Адаптивная">Адаптивная
+            <label for="adaptive">
+              <input type="radio" name="Сетка" value="Адаптивная" id="adaptive">Адаптивная
             </label>
-            <label>
-              <input type="radio" name="Сетка" value="Фиксированная">Фиксированная
+            <label for="fixed">
+              <input type="radio" name="Сетка" value="Фиксированная" id="fixed">Фиксированная
             </label>
-            <label>
-              <input type="radio" name="Сетка" value="Резиновая">Резиновая
+            <label for="rubber">
+              <input type="radio" name="Сетка" value="Резиновая" id="rubber">Резиновая
             </label>
             <p>Особенности:</p>
-            <label>
-              <input type="checkbox" name="Слайдер">Слайдер
+            <label for="slider">
+              <input type="checkbox" name="Слайдер" id="slider">Слайдер
             </label>
-            <label>
-              <input type="checkbox" name="Блок преимуществ">Блок преимуществ
+            <label for="advantages">
+              <input type="checkbox" name="Блок преимуществ" id="advantages">Блок преимуществ
             </label>
-            <label>
-              <input type="checkbox" name="Новости">Новости
+            <label for="news">
+              <input type="checkbox" name="Новости" id="news">Новости
             </label>
-            <label>
-              <input type="checkbox" name="Галерея">Галерея
+            <label for="passage">
+              <input type="checkbox" name="Галерея" id="passage">Галерея
             </label>
-            <label>
-              <input type="checkbox" name="Корзина">Корзина
+            <label for="basket">
+              <input type="checkbox" name="Корзина" id="basket">Корзина
             </label>
             <button class="button button-show">показать</button>
           <fieldset>
@@ -72,15 +72,14 @@
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p class="aboutus1">191186, Санкт-Петербург,</p> 
           <p class="aboutus1">ул. Б. Конюшенная, д. 19/8</p>
-          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p><form>
-          <button class="button button-writetous">напишите нам</button>
-          </form>
+          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p>
+          <a href="#" class="button-writetous"><span>НАПИШИТЕ НАМ</span></a>
         </div>
         <div>
           <ul class="social-network">
-            <li class="vkontakte"><a href=""><img src="img/vk-icon.svg"  alt="">Вконтакте</a></li>
-            <li class="facebook"><a href=""><img src="img/fb-icon.svg"  alt="">Фейсбук</a></li>
-            <li class="instagram"><a href=""><img src="img/insta-icon.svg" alt="" >Инстаграм</a></li>
+            <li><a href="" class="social-icon"><img src="img/vk-icon.svg"  alt="">Вконтакте</a></li>
+            <li><a href="" class="social-icon"><img src="img/fb-icon.svg"  alt="">Фейсбук</a></li>
+            <li><a href="" class="social-icon"><img src="img/insta-icon.svg" alt="">Инстаграм</a></li>
           </ul>
         </div>
         <p class="letsbefriends">давайте дружить, это выгодно!</p>

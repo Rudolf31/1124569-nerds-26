@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/normalize.css" rel="stylesheet">
   </head>
@@ -13,10 +13,10 @@
         <nav class="main-navigation">
           <a><img src="img/nerds-logo.svg" alt="логотип" class="logo1"></a>
           <ul class="site-navigation">
-            <li class="atelier"><a href="" >студия</a></li>
-            <li class="clientele"><a href="">клиенты</a></li>
-            <li class="shop"><a href="catalog.html">магазин</a></li>
-            <li class="contacts"><a href="">контакты</a></li>
+            <li class="menu"><a href="" >студия</a></li>
+            <li class="menu"><a href="">клиенты</a></li>
+            <li class="menu"><a href="catalog.html">магазин</a></li>
+            <li class="menu"><a href="">контакты</a></li>
           </ul>
           <ul>
             <li class="cart site-navigation"><a href="">корзина</a></li>
@@ -81,14 +81,14 @@
           <p class="aboutus1">191186, Санкт-Петербург,</p> 
           <p class="aboutus1">ул. Б. Конюшенная, д. 19/8</p>
           <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p><form>
-          <button class="button button-writetous">напишите нам</button>
+          <button class="button-writetous">напишите нам</button>
           </form>
         </div>
         <div>
           <ul class="social-network">
-            <li class="vkontakte"><a href=""><img src="img/vk-icon.svg"  alt="">Вконтакте</a></li>
-            <li class="facebook"><a href=""><img src="img/fb-icon.svg"  alt="">Фейсбук</a></li>
-            <li class="instagram"><a href=""><img src="img/insta-icon.svg" alt="" >Инстаграм</a></li>
+            <li><a href="" class="social-icon"><img src="img/vk-icon.svg"  alt="">Вконтакте</a></li>
+            <li><a href="" class="social-icon"><img src="img/fb-icon.svg"  alt="">Фейсбук</a></li>
+            <li><a href="" class="social-icon"><img src="img/insta-icon.svg" alt="">Инстаграм</a></li>
           </ul>
         </div>
         <p class="letsbefriends">Давайте дружить,это выгодно!</p>
@@ -112,7 +112,7 @@
       </p>
       <p>
         <label for="user-letter" class="popap">Текст письма:</label>
-        <textarea id="" name="letter" placeholder="В свободной форме">
+        <textarea id="user-letter" name="letter" placeholder="В свободной форме">
         </textarea>
       </p>
       <button type="submit" class="button button-send">отправить</button>
