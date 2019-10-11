@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto","Arial", sans-serif;
 
 }
 .visually-hidden {
@@ -25,6 +25,7 @@ body {
 .logo1 {
   width: 160px;
   height: 65px;
+  object-fit: contain;
 }
 
 a {
@@ -270,8 +271,9 @@ list-style: none;
 }
 
 .map {
-margin: 0;
-float: center;
+  width: 1440px;
+  height: 416px;
+  object-fit: contain;
 }
 
 .since2004 {
@@ -319,6 +321,19 @@ float: center;
   justify-content: center;
 }
 
+.social-icon:hover {
+  background-color: #e74246;
+}
+
+.social-icon:focus {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+a:active img { 
+opacity: 0.3
+}
+
 .aboutus1{
 color: rgb(102, 102, 102);
 } 
@@ -331,19 +346,10 @@ color: rgb(102, 102, 102);
   background-color: #fb565a;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 19px;
-  padding-top: 19px;
+  padding-bottom: 15px;
+  padding-top: 16px;
   border-radius: 3px;
-}
-
-a span {
-  color: white;
-  font-size: 16px;
-  color: #ffffff;
-  font-family: Roboto;
-  font-weight: 500;
-  line-height: 18px;
-  text-transform: uppercas
+  color: #fff;
 }
 
 .button-writetous:hover {
@@ -374,13 +380,13 @@ font-size: 43px;
 }
 
 .button-show {
-  width: 250px;
+  width: 260px;
   height: 50px;
   background-color: #e7e7e7;
   border: none;
   font-size: 20px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .button-show:hover {
