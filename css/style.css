@@ -63,7 +63,7 @@ list-style: none;
   font-size: 16px;
   font-family: "Roboto";
   text-transform: uppercase;
-  position: absolute;
+
   left: 1225px;
   top: 65px; 
   font-weight: bold;
@@ -86,16 +86,16 @@ list-style: none;
 .websites::before {
   content: "";
   position: absolute;
-  padding-top: 0px;
+  top: 0px;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-1.jpg");
   }
 
 .websites {
-  
+  padding-top: 180px;
   position: relative;
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -105,14 +105,16 @@ list-style: none;
 .applications::before {
   content: "";
   position: absolute;
+  top: 0px;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-2.jpg");
   }
 
 .applications {
+  padding-top: 180px;
   position: relative;
-  font-size: 25px;
+  font-size: 24px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -122,13 +124,15 @@ list-style: none;
 .presentations::before {
   content: "";
   position: absolute;
+  top: 0px;
   width: 300px;
   height: 146px;
   background: url("../img/illustration-3.jpg");
   }
 
 .presentations {
-  font-size: 25px;
+  font-size: 24px;
+  padding-top: 180px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -144,7 +148,7 @@ list-style: none;
   height: 41px;
 }
 .content2 {
-    font-size: 16px;
+  font-size: 16px;
   font-family: "Roboto";
   color: rgb(40, 49, 54);
   width: 239px;
@@ -175,23 +179,35 @@ list-style: none;
 }
 
 .button-orders1 {
-  width: 160px;
-  height: 50px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-right: 39px;
+  padding-left: 39px;
   background-color: #fb565a;
   border: none;
+  border-radius: 3px;
+  color: white;
 }
 
 .button-orders2 {
-  width: 160px;
-  height: 50px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-right: 39px;
+  padding-left: 39px;
   background-color: #00ca74;
   border: none;
+  border-radius: 3px;
+  color: white;
 }
 .button-orders3 {
-  width: 160px;
-  height: 50px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-right: 39px;
+  padding-left: 39px;
   background-color: #efc84a;
   border: none;
+  border-radius: 3px;
+  color: white;
 }
 
 .button-orders1:hover {
@@ -212,19 +228,19 @@ list-style: none;
   outline: none;
 }
 
-  .button-orders2:focus {
+.button-orders2:focus {
   background-color: #00aa62;
   color: #4dc491;
   outline: none;
 }
 
-  .button-orders3:focus {
+.button-orders3:focus {
   background-color: #e5a722;
   color: #edc265;
   outline: none;
 }
 
-  .letsbefriends {
+.letsbefriends {
   font-size: 35px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
@@ -232,7 +248,7 @@ list-style: none;
   line-height: 1;
 }
 
-  .discount {
+.discount {
   font-size: 16px;
   font-family: "Roboto";
   color: rgb(68, 68, 68);
@@ -240,7 +256,18 @@ list-style: none;
   height: 16px;
 }
 
-  .we1 {
+h1 {
+  font-family: Roboto;
+  font-size: 55px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.we1 {
   font-size: 45.5px;
   font-family: "Roboto";
   color: rgb(0, 0, 0);
@@ -350,6 +377,7 @@ color: rgb(102, 102, 102);
   padding-top: 16px;
   border-radius: 3px;
   color: #fff;
+  text-align: center;
 }
 
 .button-writetous:hover {
