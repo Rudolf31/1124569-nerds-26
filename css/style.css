@@ -23,6 +23,8 @@ body {
 }
 
 .logo1 {
+  margin-left: 140px;
+  margin-top: 49px;
   width: 160px;
   height: 65px;
   object-fit: contain;
@@ -55,14 +57,31 @@ list-style: none;
 .menu {
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.menu:nth-child(1) {
+margin-left: 202px;
+}
+
+.menu:nth-child(2) {
+margin-left: 47px;
+}
+
+.menu:nth-child(3) {
+margin-left: 48px;
+}
+
+.menu:nth-child(4) {
+margin-left: 45px;
 }
 
 .cart {
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   position: relative;
+  margin-top: 83px;
 }
 
 .orders li {
@@ -154,6 +173,8 @@ list-style: none;
 .cart {
   display: inline-block;
   padding-left: 40px;
+  margin-top: 83px;
+  margin-left: 245px;
 }
 
 .cart::before {
@@ -260,17 +281,16 @@ h1 {
 }
 
 .we1 {
-  font-size: 45.5px;
+  font-size: 45px;
   color: rgb(0, 0, 0);
-  width: 700px;
-  font-weight: bold;
+  width: 650px;
+  font-weight: 500;
 }
 
 .we2 {
   font-size: 16px;
   color: rgb(40, 49, 54);
   width: 616px;
-  height: 40px;
   font-weight: normal;
   line-height: 1.5;
   color: #283136;
@@ -426,11 +446,8 @@ font-size: 43px;
 .flex-menu {
   display: flex;
   margin-top: 83px;
+  align-items: center;
 }
-
-.flex-menu:nth-child(1) { 
-margin-left: 502px;
-  }
 
 .flex-orders {
   display: flex;
@@ -461,4 +478,8 @@ margin-left: 502px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.flex-header {
+  display: flex;
 }
