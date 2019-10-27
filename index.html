@@ -18,7 +18,7 @@
             <li class="menu"><a href="catalog.html">магазин</a></li>
             <li class="menu"><a href="" >контакты</a></li>
           </ul>
-          <ul>
+          <ul class="ul-cart">
             <li class="site-navigation"><a href="" class="cart">корзина</a></li>
           </ul>
         </nav>
@@ -45,8 +45,8 @@
             <a href="" class="button-orders3">ЗАКАЗАТЬ</a>
           </li>
         </ul>
-        <section>
-          <div class="flex-aboutus">
+        <section class="flex-aboutus">
+          <div class="flex-aboutus1">
             <p class="we1">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
             <p class="we2">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
             <p class="we3">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
@@ -59,28 +59,34 @@
           <div class="flex-aboutus2">
             <img src="img/nerds-illustration.jpg">
             <p class="since2004"> С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-            <ul class="percents flex-percents">
-              <li>146%</li>
-              <li>Уровень самоотдачи</li>
-              <li>100%</li>
-              <li>Соблюдение сроков</li>
-              <li>50%</li>
-              <li>Минимальная предоплата</li>
+            <ul class="percents">
+              <table> 
+                <tr class="percents1">
+                  <td><li>146<sup>%</sup></li></td>
+                  <td><li>100<sup>%</sup></li></td>
+                  <td><li>50<sup>%</sup></li></td>
+                </tr>
+                <tr class="percents2">
+                  <td><li>Уровень самоотдачи</li></td>
+                  <td><li>Соблюдение сроков</li></td>
+                  <td><li>Минимальная предоплата</li></td>
+                </tr>
+              </table>
             </ul>
           </div>
         </section>
         <section>
-          <a href=""><img src="img/logo-1,1.png" class="company"></a>
-          <a href=""><img src="img/logo-2,1.png" class="company"></a>
-          <a href=""><img src="img/logo-3,1.png" class="company"></a>
-          <a href=""><img src="img/logo-4,1.png" class="company"></a>  
+          <a href="" class="company1"><img src="img/logo-1,1.png" class="company"></a>
+          <a href="" class="company2"><img src="img/logo-2,1.png" class="company"></a>
+          <a href="" class="company3"><img src="img/logo-3,1.png" class="company .company4"></a>
+          <a href="" class=""><img src="img/logo-4,1.png." class="company"></a>  
         </section>
     </div>  
       <img src="img/map-marker.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map">
     </main>
     <footer>
       <div class="container">
-        <div>
+        <div class="plate">
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p class="aboutus1">191186, Санкт-Петербург,</p> 
           <p class="aboutus1">ул. Б. Конюшенная, д. 19/8</p>
@@ -100,22 +106,21 @@
     </footer>
     <div class="popap">
       <h2 class="writetous">Напишите нам</h2>
-      <button type="button" aria-label="Закрыть">X</button>
+      <button type="button" aria-label="Закрыть" class="close">X</button>
       <br>
       <form action="https://echo.htmlacademy.ru" method="get">
         <p>
-          <label for="nameandsurname" class="popap">Ваше имя:</label>
+          <label for="nameandsurname" class="popap-name">Ваше имя:</label>
           <input id="nameandsurname" type="text"
           name="nameandsurname" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
-          <br>
           <input id="user-login" type="text"
                name="login" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-letter" class="popap">Текст письма:</label>
+          <label for="user-letter" class="popap-letter">Текст письма:</label>
           <textarea id="" name="letter" placeholder="В свободной форме">
           </textarea>
         </p>

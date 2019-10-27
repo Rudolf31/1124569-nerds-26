@@ -23,11 +23,14 @@ body {
 }
 
 .logo1 {
-  margin-left: 140px;
-  margin-top: 49px;
   width: 160px;
   height: 65px;
   object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -39,7 +42,7 @@ a {
 }
 
 .site-navigation {
-list-style: none;
+  list-style: none; 
 }
 
 .main-header {
@@ -81,7 +84,6 @@ margin-left: 45px;
   text-transform: uppercase;
   font-weight: 500;
   position: relative;
-  margin-top: 83px;
 }
 
 .orders li {
@@ -173,7 +175,6 @@ margin-left: 45px;
 .cart {
   display: inline-block;
   padding-left: 40px;
-  margin-top: 83px;
   margin-left: 245px;
 }
 
@@ -257,17 +258,17 @@ margin-left: 45px;
 }
 
 .letsbefriends {
-  font-size: 35px;
+  font-size: 36px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1;
+  width: 545px;
 }
 
 .discount {
   font-size: 16px;
-  color: rgb(68, 68, 68);
+  color: #444444;
   width: 343px;
-  height: 16px;
 }
 
 h1 {
@@ -282,14 +283,25 @@ h1 {
 
 .we1 {
   font-size: 45px;
-  color: rgb(0, 0, 0);
   width: 650px;
+  color: rgb(0, 0, 0);
   font-weight: 500;
+  position: relative;
+  line-height: 1;
+}
+
+ .we1::before {
+  content: "";
+  position: absolute;
+  background-color: #e1e1e1;
+  width: 1160px;
+  height: 2px;
+  bottom: 178px;
+  margin-top: 10px;
 }
 
 .we2 {
   font-size: 16px;
-  color: rgb(40, 49, 54);
   width: 616px;
   font-weight: normal;
   line-height: 1.5;
@@ -305,12 +317,25 @@ h1 {
 .transfer li {
   font-weight: normal;
   color: #283136;
+  list-style: none; 
+  position: relative;
+  padding-left: 33px;
+  right: 40px;
+  padding-bottom: 45px;
 }
 
-.map {
-  width: 1440px;
-  height: 416px;
-  object-fit: contain;
+.transfer li:nth-child(1) {
+  margin-top: 30px;
+}
+
+.transfer li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  background-color: #fb565a;
 }
 
 .since2004 {
@@ -319,21 +344,27 @@ h1 {
   line-height: 1.5;
   text-align: center;
   font-size: 16px;
+  margin-bottom: 36px;
   }
 
 .percents {
   list-style: none;
+  padding-left: 0px;
 }
 
-.percents li:nth-child(odd) {
+.percents1 li {
+  padding-right: 26px; 
   font-weight: bold;
   font-size: 45px;
 }
 
-.percents li:nth-child(even) {
+.percents2 li {
   font-weight: normal;
   font-size: 16px;
   width: 10px;
+}
+li sup {
+  font-size: 25px;
 }
 
 .company {
@@ -356,6 +387,7 @@ h1 {
   font-size: 0px;
   display: flex;
   justify-content: center;
+  margin: 69px 0 0 11px;
 }
 
 .social-icon:hover {
@@ -383,8 +415,8 @@ color: rgb(102, 102, 102);
   background-color: #fb565a;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 15px;
-  padding-top: 16px;
+  padding-bottom: 18px;
+  padding-top: 18px;
   border-radius: 3px;
   color: #fff;
   text-align: center;
@@ -412,9 +444,19 @@ color: rgb(102, 102, 102);
 font-size: 43px;
 }
 
+.popap-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 .popap-e-mail {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.popap-letter {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .button-show {
@@ -422,7 +464,7 @@ font-size: 43px;
   height: 50px;
   background-color: #e7e7e7;
   border: none;
-  font-size: 20px;
+  font-size: 22px;
   color: #000000;
   font-weight: 500;
 }
@@ -445,41 +487,75 @@ font-size: 43px;
 
 .flex-menu {
   display: flex;
-  margin-top: 83px;
-  align-items: center;
+  padding: 0;
 }
 
 .flex-orders {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.flex-aboutus {
-  display: flex;
+.flex-aboutus1 {
   flex-wrap: wrap;
 }
 
 .flex-aboutus2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-percents {
-  display: flex;
+  margin-left: 149px;
 }
 
 .flex-social-network {
-  display: flex;
-  margin-left:;
-  margin-right:;
-}
-}
-.flex-layouts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: flex;;
 }
 
 .flex-header {
   display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.ul-cart {
+  margin: 0;
+  padding: 0;
+}
+
+.orders li {
+  width: 300px;
+}
+
+.flex-aboutus {
+  display: flex;
+  top: 10px;
+}
+
+.grid {
+  display: block;
+  margin-bottom: 16px; 
+  font-size: 16px;
+  color: #283136;
+}
+
+.flex-layouts {
+  display: flex;
+}
+
+.flex-layouts li {
+  list-style: none; 
+  margin-right: 40px;
+  flex-wrap: wrap;
+}
+
+.peculiar-properties {
+  display: block;
+  margin-bottom: 19px; 
+  font-size: 16px;
+  color: #283136;
+}
+
+.main-flex {
+  display: flex;
+}
+
+.plate {
+  width: 319px;
+  height: 308px;
 }

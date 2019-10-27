@@ -10,13 +10,13 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-navigation">
+        <nav class="main-navigation flex-header">
           <a href="index.html"><img src="img/nerds-logo.svg" alt="логотип" class="logo1"></a>
           <ul class="site-navigation flex-menu">
             <li class="menu"><a href="" >студия</a></li>
             <li class="menu"><a href="">клиенты</a></li>
             <li class="menu"><a href="catalog.html">магазин</a></li>
-            <li class="menu"><a href="">контакты</a></li>
+            <li class="menu"><a href="" >контакты</a></li>
           </ul>
           <ul>
             <li class="cart site-navigation"><a href="">корзина</a></li>
@@ -25,48 +25,52 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <form>
+      <h1 class="shop">магазин готовых шаблонов</h1>
+      <div class="container main-flex">
+        <form class="flex-characteristic">
           <fieldset>
             <legend>Сетка:</legend>
-            <label for="adaptive">
+            <label for="adaptive" class="grid">
               <input type="radio" name="Сетка" value="Адаптивная" id="adaptive">Адаптивная
             </label>
-            <label for="fixed">
+            <label for="fixed" class="grid">
               <input type="radio" name="Сетка" value="Фиксированная" id="fixed">Фиксированная
             </label>
-            <label for="rubber">
+            <label for="rubber" class="grid">
               <input type="radio" name="Сетка" value="Резиновая" id="rubber">Резиновая
             </label>
+          </fieldset>
+          <fieldset>
             <p>Особенности:</p>
-            <label for="slider">
+            <label for="slider" class="peculiar-properties">
               <input type="checkbox" name="Слайдер" id="slider">Слайдер
             </label>
-            <label for="advantages">
+            <label for="advantages" class="peculiar-properties">
               <input type="checkbox" name="Блок преимуществ" id="advantages">Блок преимуществ
             </label>
-            <label for="news">
+            <label for="news" class="peculiar-properties">
               <input type="checkbox" name="Новости" id="news">Новости
             </label>
-            <label for="passage">
+            <label for="passage" class="peculiar-properties">
               <input type="checkbox" name="Галерея" id="passage">Галерея
             </label>
-            <label for="basket">
+            <label for="basket" class="peculiar-properties">
               <input type="checkbox" name="Корзина" id="basket">Корзина
             </label>
             <button class="button button-show">показать</button>
-          <fieldset>
+          </fieldset>
         </form>
-        <h1 class="shop">магазин готовых шаблонов</h1>
-        <dir class="flex-layouts">
-          <img src="img/img-sedona.jpg" alt="шаблон-седона">
-          <img src="img/img-pink.jpg" alt="пинк">
-          <img src="img/img-barbershop.jpg" alt="шаблон-барбершоп бородинский">
-          <img src="img/img-mishka.jpg" alt="шаблон-мишка">
-          <img src="img/img-aplus.jpg" alt="шаблон-а+">
-          <img src="img/img-kvast.jpg" alt="шаблон-квас">
-        </dir>
-      <div>
+        <div>
+          <ul class="flex-layouts">
+            <li><img src="img/img-sedona.jpg" alt="шаблон-седона"></li>
+            <li><img src="img/img-pink.jpg" alt="пинк"></li>
+            <li><img src="img/img-barbershop.jpg" alt="шаблон-барбершоп бородинский" class="layouts"></li>
+            <li><img src="img/img-mishka.jpg" alt="шаблон-мишка"></li>
+            <li><img src="img/img-aplus.jpg" alt="шаблон-а+"></li>
+            <li><img src="img/img-kvast.jpg" alt="шаблон-квас"></li>
+          </ul>
+        </div>
+      </div>
       <img src="img/map-marker.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map">
     </main>
     <footer>
@@ -85,31 +89,33 @@
             <li><a href="" class="social-icon"><img src="img/insta-icon.svg" alt="" class="icon-social">Инстаграм</a></li>
           </ul>
         </div>
-        <p class="letsbefriends">давайте дружить, это выгодно!</p>
+        <p class="letsbefriends">Давайте дружить, это выгодно!</p>
         <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <h2 class="writetous">Напишите нам</h2>
-    <button type="button" aria-label="Закрыть">X</button>
-    <br>
-    <form action="https://echo.htmlacademy.ru" method="get">
-      <p>
-        <label for="nameandsurname" class="popap">Ваше имя:</label>
-        <input id="nameandsurname" type="text"
+    <div class="popap">
+      <h2 class="writetous">Напишите нам</h2>
+      <button type="button" aria-label="Закрыть" class="close">X</button>
+      <br>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="nameandsurname" class="popap-name">Ваше имя:</label>
+          <input id="nameandsurname" type="text"
           name="nameandsurname" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="user-login" class="popap">Ваш e-mail:</label>
-        <br>
-        <input id="user-login" type="text"
+        </p>
+        <p>
+          <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
+          <br>
+          <input id="user-login" type="text"
                name="login" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="user-letter" class="popap">Текст письма:</label>
-        <textarea id="" name="letter" placeholder="В свободной форме">
-        </textarea>
-      </p>
-      <button type="submit" class="button button-send">отправить</button>
-    </form>
+        </p>
+        <p>
+          <label for="user-letter" class="popap-letter">Текст письма:</label>
+          <textarea id="" name="letter" placeholder="В свободной форме">
+          </textarea>
+        </p>
+        <button type="submit" class="button button-send">отправить</button>
+      </form>
+    </div>
   </body>
 </html>
