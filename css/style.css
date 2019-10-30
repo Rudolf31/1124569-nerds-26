@@ -277,12 +277,18 @@ margin-left: 45px;
   font-weight: bold;
   line-height: 1;
   width: 545px;
+  margin-left: 140px; 
+  margin-bottom: 0px;
+  margin-top: 78px;
 }
 
 .discount {
   font-size: 16px;
   color: #444444;
   width: 343px;
+  margin-left: 140px;
+  margin-top: 12px;
+  min-width: 350px;
 }
 
 .shop {
@@ -440,7 +446,7 @@ li sup {
   font-size: 0px;
   display: flex;
   justify-content: center;
-  margin: 69px 0 0 11px;
+  margin: 54px 0 0 11px;
 }
 
 .social-icon:hover {
@@ -457,22 +463,26 @@ opacity: 0.3
 }
 
 .aboutus1{
-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
+  padding-left: 50px;
+  margin-bottom: 51px;
 }
 
 .aboutus1 a{
-color: rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
 }
 
 .button-writetous {
   background-color: #fb565a;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 18px;
-  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   border-radius: 3px;
   color: #fff;
   text-align: center;
+  margin-left: 50px;
+  margin-top: 307px;
 }
 
 .button-writetous:hover {
@@ -644,6 +654,8 @@ color: rgb(102, 102, 102);
 
 .map {
   text-align: center;
+  height: 416px;
+  width: 1440px;
 }
 
 .plate {
@@ -653,7 +665,20 @@ color: rgb(102, 102, 102);
   height: 308px;
   background-color: #fff;
   top: 54px;
+}
 
+.plate h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-top: 39px;
+  padding-bottom: 15.5px;
+}
+
+.street {
+  margin: 0;
+  color: rgb(102, 102, 102);
+  padding-left: 50px;
 }
 
 fieldset {
@@ -693,4 +718,8 @@ textarea {
   height: 23px;
   opacity: 0.4;
 
+}
+
+.flex-footer {
+  display: flex;
 }
