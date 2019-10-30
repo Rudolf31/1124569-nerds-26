@@ -22,7 +22,7 @@
             <li class="site-navigation"><a href="" class="cart">корзина</a></li>
           </ul>
         </nav>
-      </div> 
+      </div>
     </header>
     <main>
       <div class="container">
@@ -60,7 +60,7 @@
             <img src="img/nerds-illustration.jpg">
             <p class="since2004"> С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
             <ul class="percents">
-              <table> 
+              <table class="table-percents">
                 <tr class="percents1">
                   <td><li>146<sup>%</sup></li></td>
                   <td><li>100<sup>%</sup></li></td>
@@ -75,24 +75,30 @@
             </ul>
           </div>
         </section>
-        <section>
-          <a href="" class="company1"><img src="img/logo-1,1.png" class="company"></a>
-          <a href="" class="company2"><img src="img/logo-2,1.png" class="company"></a>
-          <a href="" class="company3"><img src="img/logo-3,1.png" class="company .company4"></a>
-          <a href="" class=""><img src="img/logo-4,1.png." class="company"></a>  
+        <section >
+          <ul class="flex-company">
+            <li class="company1 company-border"><a href=""><img src="img/logo-1,1.png" class="company"></a></li>
+            <li class="company2 company-border"><a href=""><img src="img/logo-2,1.png" class="company"></a></li>
+            <li class="company3 company-border"><a href=""><img src="img/logo-3,1.png" class="company"></a></li>
+            <li class="company4 company-border"><a href="" class=""><img src="img/logo-4,1.png." class="company"></a></li>
+          </ul>
         </section>
-    </div>  
-      <img src="img/map-marker.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map">
-    </main>
-    <footer>
-      <div class="container">
+    </div>
+    <section class="contacts">
+      <div class="map">
+        <img src="img/map-marker.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" >
+      </div>
         <div class="plate">
           <h2>NЁRDS DESIGN STUDIO</h2>
-          <p class="aboutus1">191186, Санкт-Петербург,</p> 
+          <p class="aboutus1">191186, Санкт-Петербург,</p>
           <p class="aboutus1">ул. Б. Конюшенная, д. 19/8</p>
           <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p>
           <a href="#" class="button-writetous">НАПИШИТЕ НАМ</a>
         </div>
+  </section>
+    </main>
+    <footer>
+      <div class="container">
         <div>
           <ul class="social-network flex-social-network">
             <li><a href="" class="social-icon"><img src="img/vk-icon.svg"  alt="">Вконтакте</a></li>
@@ -106,24 +112,22 @@
     </footer>
     <div class="popap">
       <h2 class="writetous">Напишите нам</h2>
-      <button type="button" aria-label="Закрыть" class="close">X</button>
-      <br>
+      <button type="button" aria-label="Закрыть" class="close"><img src="img/close-cross.svg" alt="Закрыть"></button>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <label for="nameandsurname" class="popap-name">Ваше имя:</label>
-          <input id="nameandsurname" type="text"
-          name="nameandsurname" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
-          <input id="user-login" type="text"
+        <div class="flex-popap">
+          <div class="form-column">
+              <label for="nameandsurname" class="popap-name">Ваше имя:</label>
+                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия">
+          </div>
+          <div class="form-column">
+              <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
+              <input id="user-login" type="text"
                name="login" placeholder="email@example.com">
-        </p>
-        <p>
+          </div>
+        </div>
           <label for="user-letter" class="popap-letter">Текст письма:</label>
           <textarea id="" name="letter" placeholder="В свободной форме">
           </textarea>
-        </p>
         <button type="submit" class="button button-send">отправить</button>
       </form>
     </div>
