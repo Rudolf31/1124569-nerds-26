@@ -103,6 +103,10 @@ margin-left: 45px;
   position: relative;
 }
 
+.orders {
+  padding-left: 0px;
+}
+
 .orders li {
   list-style: none;
 }
@@ -175,18 +179,23 @@ margin-left: 45px;
   font-size: 16px;
   color: rgb(40, 49, 54);
   margin-bottom: 54px;
+  width: 250px;
+  min-height: 40px;
 }
 
 .content2 {
   font-size: 16px;
   color: rgb(40, 49, 54);
   margin-bottom: 54px;
-
+  width: 239px;
+  min-height: 40px;
 }
 .content3 {
   font-size: 16px;
   color: rgb(40, 49, 54);
   margin-bottom: 54px;
+  width: 219px;
+  min-height: 40px;
 }
 
 .cart {
@@ -394,7 +403,17 @@ li sup {
   flex-wrap: wrap;
 }
 
-.company-border {
+.company-border1 {
+  border-top:  2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.company-border2 {
+  border-top: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.company-border3 {
   border-top: 2px solid #e1e1e1;
   border-bottom: 2px solid #e1e1e1;
 }
@@ -650,12 +669,8 @@ opacity: 0.3
 
 .contacts {
   position: relative;
-}
-
-.map {
   text-align: center;
   height: 416px;
-  width: 1440px;
 }
 
 .plate {
@@ -665,6 +680,7 @@ opacity: 0.3
   height: 308px;
   background-color: #fff;
   top: 54px;
+  text-align: left;
 }
 
 .plate h2 {
