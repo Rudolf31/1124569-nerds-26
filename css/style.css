@@ -119,7 +119,9 @@ margin-left: 45px;
 
 .social-network {
   list-style: none;
+  padding-left: 0;
 }
+
 
 .websites::before {
   content: "";
@@ -286,7 +288,7 @@ margin-left: 45px;
   font-weight: bold;
   line-height: 1;
   width: 545px;
-  margin-left: 140px; 
+  margin-left: 150px; 
   margin-bottom: 0px;
   margin-top: 78px;
 }
@@ -295,7 +297,7 @@ margin-left: 45px;
   font-size: 16px;
   color: #444444;
   width: 343px;
-  margin-left: 140px;
+  margin-left: 150px;
   margin-top: 12px;
   min-width: 350px;
 }
@@ -372,7 +374,7 @@ margin-left: 45px;
 }
 
 .percents1 li {
-  padding-right: 26px;
+  padding-right: 15px;
   font-weight: bold;
   font-size: 45px;
 }
@@ -403,19 +405,11 @@ li sup {
   flex-wrap: wrap;
 }
 
-.company-border1 {
+.company-border {
   border-top:  2px solid #e1e1e1;
   border-bottom: 2px solid #e1e1e1;
-}
-
-.company-border2 {
-  border-top: 2px solid #e1e1e1;
-  border-bottom: 2px solid #e1e1e1;
-}
-
-.company-border3 {
-  border-top: 2px solid #e1e1e1;
-  border-bottom: 2px solid #e1e1e1;
+  justify-content: space-around;
+  padding-left: 0;
 }
 
 .company1 {
@@ -465,7 +459,7 @@ li sup {
   font-size: 0px;
   display: flex;
   justify-content: center;
-  margin: 54px 0 0 11px;
+  margin: 54px 11px 0 0;
 }
 
 .social-icon:hover {
@@ -611,7 +605,7 @@ opacity: 0.3
 }
 
 .flex-aboutus2 {
-  margin-left: 149px;
+  margin-left: auto;
 }
 
 .flex-social-network {
@@ -673,7 +667,7 @@ opacity: 0.3
   height: 416px;
 }
 
-.plate {
+.tableblock{
   position: absolute;
   content: "";
   width: 319px;
@@ -683,7 +677,7 @@ opacity: 0.3
   text-align: left;
 }
 
-.plate h2 {
+.tableblock h2 {
   font-size: 18px;
   font-weight: bold;
   padding-left: 50px;
@@ -738,4 +732,117 @@ textarea {
 
 .flex-footer {
   display: flex;
+}
+
+.cost {
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 63px;
+}
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.howtosort  {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 267px;
+}
+
+.howtosort li {
+  margin-right: 26px;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+  margin-top: 63px;
+}
+
+.howtosort a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.howtosort a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.howtosort a:focus {
+  color: #000000;
+}
+
+.triangle {
+  padding-left: 0;
+  display: inline-block;
+}
+
+.triangle-to-top a {
+  width: 0; 
+  height: 0;
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-bottom: 10px solid #a6a6a6;
+  opacity: 0.2
+}
+
+.triangle-to-top :hover {
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-bottom: 10px solid #a6a6a6;
+  opacity: 0.6;
+}
+
+.triangle-to-top :active {
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-bottom: 10px solid #000;
+  opacity: 1;
+}
+
+.triangle-to-buttom a {
+  width: 0; 
+  height: 0;
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-top: 10px solid #a6a6a6;
+  opacity: 0.2
+}
+
+.triangle-to-buttom :hover {
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-top: 10px solid #a6a6a6;
+  opacity: 0.6;
+}
+
+.triangle-to-buttom :active {
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-top: 10px solid #000;
+  opacity: 1;
+}
+
+.flex-nombers {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.flex-nombers div {
+  margin-right: 11px;
+}
+
+.nomber-1 ul {
+  width: 50px;
+  height: 50px;
+  border: solid 3px #dbdbdb;
 }
