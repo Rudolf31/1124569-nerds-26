@@ -13,7 +13,7 @@
         <nav class="main-navigation flex-header">
           <a><img src="img/nerds-logo.svg" alt="логотип" class="logo1"></a>
           <ul class="site-navigation flex-menu">
-            <li class="menu"><a href="" >студия</a></li>
+            <li class="menu"><a href="">студия</a></li>
             <li class="menu"><a href="">клиенты</a></li>
             <li class="menu"><a href="catalog.html">магазин</a></li>
             <li class="menu"><a href="" >контакты</a></li>
@@ -25,6 +25,36 @@
       </div>
     </header>
     <main>
+      <section class="slider">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider-controls">
+            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого,<br> скрупулезно.</h3>
+              <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="slider-item-button button" href="">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Любим математику как никто другой</h3>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slider-item-button button" href="">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Только ночь,<br> только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a class="slider-item-button button-slider" href="">Узнать больше</a>
+            </li>
+          </ul>  
+        </div>
+      </section>
       <div class="container">
         <h1 class="visually-hidden">Главное содержимое</h1>
         <h2 class="visually-hidden">заказы</h2>
@@ -77,7 +107,7 @@
         </section>
         <section >
           <ul class="flex-company company-border">
-            <li class="company1"><a href=""><img src="img/logo-1,1.png" class="company"></a></li>
+            <li class="company1"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1,1.png" class="company"></a></li>
             <li class="company2"><a href=""><img src="img/logo-2,1.png" class="company"></a></li>
             <li class="company3"><a href=""><img src="img/logo-3,1.png" class="company"></a></li>
             <li class="company4"><a href="" class=""><img src="img/logo-4,1.png." class="company"></a></li>
@@ -107,7 +137,7 @@
           </ul>
         </div>
         <div>
-          <p class="letsbefriends">Давайте дружить,это выгодно!</p>
+          <p class="letsbefriends">Давайте дружить, это выгодно!</p>
           <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
@@ -119,12 +149,12 @@
         <div class="flex-popap">
           <div class="form-column">
               <label for="nameandsurname" class="popap-name">Ваше имя:</label>
-                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия">
+                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия" class="name-surname">
           </div>
           <div class="form-column">
               <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
               <input id="user-login" type="text"
-               name="login" placeholder="email@example.com">
+               name="login" placeholder="email@example.com" class="login">
           </div>
         </div>
           <label for="user-letter" class="popap-letter">Текст письма:</label>

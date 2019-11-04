@@ -13,7 +13,7 @@
         <nav class="main-navigation flex-header">
           <a href="index.html"><img src="img/nerds-logo.svg" alt="логотип" class="logo1"></a>
           <ul class="site-navigation flex-menu">
-            <li class="menu"><a href="" >студия</a></li>
+            <li class="menu"><a href="index.html">студия</a></li>
             <li class="menu"><a href="">клиенты</a></li>
             <li class="menu menu-current-item"><a href="catalog.html">магазин</a></li>
             <li class="menu"><a href="">контакты</a></li>
@@ -29,6 +29,24 @@
       <div class="container main-flex">
         <form class="flex-characteristic">
           <p class="cost">СТОИМОСТЬ:</p>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
           <fieldset class="form-input1">
             <legend class="form-menu">СЕТКА:</legend>
             <label for="adaptive" class="grid">
@@ -88,9 +106,9 @@
           </ul>
           <div>
             <ul class="flex-nombers">
-              <li class="nomber"><a href="" class="nomber-1"> 1</a></li>
-              <li class="nomber"><a href="" class="nomber-2-3">2</a></li>
-              <li class="nomber"><a href="" class="nomber-2-3">3</a></li>
+              <li class="nomber"><a href="" class="nomber-1">1</a></li>
+              <li class="nomber"><a href="" class="nomber-2-3"><span class="span-nomber-2-3">2</span></a></li>
+              <li class="nomber"><a href="" class="nomber-2-3"><span class="span-nomber-2-3">3</span></a></li>
               <li class="nomber"><a href="" class="next">СЛЕДУЮЩАЯ</a></li>
             </ul>
           </div>
@@ -106,7 +124,6 @@
           <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p>
           <a href="#" class="button-writetous">НАПИШИТЕ НАМ</a>
         </div>
-        
       </div>
   </section>
     </main>
@@ -132,12 +149,12 @@
         <div class="flex-popap">
           <div class="form-column">
               <label for="nameandsurname" class="popap-name">Ваше имя:</label>
-                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия">
+                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия" class="name-surname">
           </div>
           <div class="form-column">
               <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
               <input id="user-login" type="text"
-               name="login" placeholder="email@example.com">
+               name="login" placeholder="email@example.com" class="login">
           </div>
         </div>
           <label for="user-letter" class="popap-letter">Текст письма:</label>
