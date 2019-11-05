@@ -13,7 +13,7 @@
         <nav class="main-navigation flex-header">
           <a href="index.html"><img src="img/nerds-logo.svg" alt="логотип" class="logo1"></a>
           <ul class="site-navigation flex-menu">
-            <li class="menu"><a href="index.html">студия</a></li>
+            <li class="menu"><a href="">студия</a></li>
             <li class="menu"><a href="">клиенты</a></li>
             <li class="menu menu-current-item"><a href="catalog.html">магазин</a></li>
             <li class="menu"><a href="">контакты</a></li>
@@ -27,55 +27,64 @@
     </header>
     <main>
       <div class="container main-flex">
-        <form class="flex-characteristic">
-          <p class="cost">СТОИМОСТЬ:</p>
-          <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-item">
-              <legend>Стоимость:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+        <form class="flex-characteristic" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
               </div>
-            </fieldset>
-          </form>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+          </fieldset>
           <fieldset class="form-input1">
             <legend class="form-menu">СЕТКА:</legend>
-            <label for="adaptive" class="grid">
-              <input type="radio" name="Сетка" value="Адаптивная" id="adaptive" class="radio-button">Адаптивная
-            </label>
-            <label for="fixed" class="grid">
-              <input type="radio" name="Сетка" value="Фиксированная" id="fixed">Фиксированная
-            </label>
-            <label for="rubber" class="grid">
-              <input type="radio" name="Сетка" value="Резиновая" id="rubber">Резиновая
-            </label>
+            <ul class="list">
+               <li class="filter-option1">
+                <input type="radio" name="Сетка" value="Адаптивная" id="adaptive" class="visually-hidden1">Адаптивная
+                <label for="adaptive"></label>
+              </li>
+              <li class="filter-option1">
+                <input type="radio" name="Сетка" value="Фиксированная" id="fixed" class="visually-hidden1">Фиксированная
+                <label for="fixed"></label>
+              </li>
+              <li class="filter-option1">
+                <input type="radio" name="Сетка" value="Резиновая" id="rubber" class="visually-hidden1">Резиновая
+                <label for="rubber"></label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form-input2">
+          <fieldset class="form-input">
             <p class="form-menu">ОСОБЕННОСТИ:</p>
-            <label for="slider" class="peculiar-properties">
-              <input type="checkbox" name="Слайдер" id="slider">Слайдер
-            </label>
-            <label for="advantages" class="peculiar-properties">
-              <input type="checkbox" name="Блок преимуществ" id="advantages">Блок преимуществ
-            </label>
-            <label for="news" class="peculiar-properties">
-              <input type="checkbox" name="Новости" id="news">Новости
-            </label>
-            <label for="passage" class="peculiar-properties">
-              <input type="checkbox" name="Галерея" id="passage">Галерея
-            </label>
-            <label for="basket" class="peculiar-properties">
-              <input type="checkbox" name="Корзина" id="basket">Корзина
-            </label>
+            <ul class="list">
+              <li class="filter-option2">
+                <input class="visually-hidden2" type="checkbox" name="grid-adaptive" id="grid-adaptive" checked>
+                <label for="grid-adaptive">Слайдер</label>
+              </li>
+              <li class="filter-option2">
+                <input class="visually-hidden2" type="checkbox" name="grid-fixed" id="grid-fixed">
+                <label for="grid-fixed">Блок преимуществ</label>
+              </li>
+              <li class="filter-option2">
+                <input class="visually-hidden2" type="checkbox" name="grid-news" id="grid-news">
+                <label for="grid-news">Новости</label>
+              </li>
+              <li class="filter-option2">
+                <input class="visually-hidden2" type="checkbox" name="grid-passage" id="grid-passage">
+                <label for="grid-passage">Галерея</label>
+              </li>
+              <li class="filter-option2">
+                <input class="visually-hidden2" type="checkbox" name="grid-basket" id="grid-basket">
+                <label for="grid-basket">Корзина</label>
+              </li>
+            </ul>
             <button class="button button-show">показать</button>
           </fieldset>
         </form>
