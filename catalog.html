@@ -29,7 +29,7 @@
       <div class="container main-flex">
         <form class="flex-characteristic" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
+            <legend class="cost">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -45,43 +45,43 @@
             </div>
           </fieldset>
           <fieldset class="form-input1">
-            <legend class="form-menu">СЕТКА:</legend>
+            <legend class="form-menu1">СЕТКА:</legend>
             <ul class="list">
                <li class="filter-option1">
-                <input type="radio" name="Сетка" value="Адаптивная" id="adaptive" class="visually-hidden1">Адаптивная
-                <label for="adaptive"></label>
+                <input type="radio" name="Сетка" value="Адаптивная" id="adaptive" class="visually-hidden"><label for="adaptive">Адаптивная
+                </label>
               </li>
               <li class="filter-option1">
-                <input type="radio" name="Сетка" value="Фиксированная" id="fixed" class="visually-hidden1">Фиксированная
-                <label for="fixed"></label>
+                <input type="radio" name="Сетка" value="Фиксированная" id="fixed" class="visually-hidden"><label for="fixed">Фиксированная
+                </label>
               </li>
               <li class="filter-option1">
-                <input type="radio" name="Сетка" value="Резиновая" id="rubber" class="visually-hidden1">Резиновая
-                <label for="rubber"></label>
+                <input type="radio" name="Сетка" value="Резиновая" id="rubber" class="visually-hidden"><label for="rubber">Резиновая
+                </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-input">
-            <p class="form-menu">ОСОБЕННОСТИ:</p>
+            <p class="form-menu2">ОСОБЕННОСТИ:</p>
             <ul class="list">
               <li class="filter-option2">
-                <input class="visually-hidden2" type="checkbox" name="grid-adaptive" id="grid-adaptive" checked>
+                <input class="visually-hidden" type="checkbox" name="grid-adaptive" id="grid-adaptive" checked>
                 <label for="grid-adaptive">Слайдер</label>
               </li>
               <li class="filter-option2">
-                <input class="visually-hidden2" type="checkbox" name="grid-fixed" id="grid-fixed">
+                <input class="visually-hidden" type="checkbox" name="grid-fixed" id="grid-fixed">
                 <label for="grid-fixed">Блок преимуществ</label>
               </li>
               <li class="filter-option2">
-                <input class="visually-hidden2" type="checkbox" name="grid-news" id="grid-news">
+                <input class="visually-hidden" type="checkbox" name="grid-news" id="grid-news">
                 <label for="grid-news">Новости</label>
               </li>
               <li class="filter-option2">
-                <input class="visually-hidden2" type="checkbox" name="grid-passage" id="grid-passage">
+                <input class="visually-hidden" type="checkbox" name="grid-passage" id="grid-passage">
                 <label for="grid-passage">Галерея</label>
               </li>
               <li class="filter-option2">
-                <input class="visually-hidden2" type="checkbox" name="grid-basket" id="grid-basket">
+                <input class="visually-hidden" type="checkbox" name="grid-basket" id="grid-basket">
                 <label for="grid-basket">Корзина</label>
               </li>
             </ul>
@@ -90,8 +90,8 @@
         </form>
         <div class="headers">
           <div class="sort">
-            <div>
-              <p class="">СОРТИРОВАТЬ:</p>
+            <p class="">СОРТИРОВАТЬ:</p>
+            <div>  
             </div>
             <div class="howtosort-triangle">
               <ul class="howtosort">
@@ -106,71 +106,59 @@
             </div>
           </div>
           <ul class="flex-layouts">
-            <li>
-              <a href="">
-                <div class="upper-block"><span></span><span></span><span></span></div>
-                <img src="img/img-sedona.jpg" alt="шаблон-седона">
-                <div class="grey">
-                  <p>SEDONA</p>
-                  <p>Информационный сайт для туристов</p>
-                  <button>9 900 руб.</button>
-                </div>
-              </a>
+            <li class="sedona layouts">
+              <div class="upper-block"><span></span><span></span><span></span></div>
+              <img src="img/img-sedona.jpg" alt="шаблон-седона">
+              <div class="grey">
+                <p><a href="">SEDONA</a></p>
+                <p>Информационный сайт для туристов</p>
+                <a href="" class="button-9900">9 900 РУБ.</a>
+              </div>
             </li>
-            <li>
-              <a href="">
-                <div class="upper-block"><span></span><span></span><span></span></div>
-                <img src="img/img-pink.jpg" alt="пинк">
-                <div class="grey">
-                  <p>PINK APP</p>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
-                  <button>9 900 руб.</button>
-                </div>
-              </a>
+            <li class="pink-app layouts">
+              <div class="upper-block"><span></span><span></span><span></span></div>
+              <img src="img/img-pink.jpg" alt="пинк">
+              <div class="grey">
+                <p><a href="">PINK APP</a></p>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="" class="button-9900">9 900 РУБ.</a>
+              </div>
             </li>
-            <li>
-              <a href="">
-                <div class="upper-block"><span></span><span></span><span></span></div>
-                <img src="img/img-barbershop.jpg" alt="шаблон-барбершоп бородинский">
-                <div class="grey">
-                  <p>BARBERSHOP</p>
-                  <p>Сайт салона красоты. Для мужчин, да.</p>
-                  <button>9 900 руб.</button>
-                </div>
-              </a>
+            <li class="babershop layouts">
+              <div class="upper-block"><span></span><span></span><span></span></div>
+              <img src="img/img-barbershop.jpg" alt="шаблон-барбершоп бородинский">
+              <div class="grey">
+                <p><a href="">BARBERSHOP</a></p>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a href="" class="button-9900">9 900 РУБ.</a>
+              </div>
             </li>
-            <li>
-              <a href="">
-                <div class="upper-block"><span></span><span></span><span></span></div>
-                <img src="img/img-mishka.jpg" alt="шаблон-мишка">
-                <div class="grey">
-                  <p>MISHKA</p>
-                  <p>Интернет-магазин вязаных игрушек</p>
-                  <button>9 900 руб.</button>
-                </div>
-              </a>
+            <li class="mishka layouts">
+              <div class="upper-block"><span></span><span></span><span></span></div>
+              <img src="img/img-mishka.jpg" alt="шаблон-мишка">
+              <div class="grey">
+                <p><a href="">MISHKA</a></p>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a href="" class="button-9900">9 900 РУБ.</a>
+              </div>
             </li>
-            <li>
-              <a href="" class="a-plus">
-                <div class="upper-block"><span></span><span></span><span></span></div>
-                <img src="img/img-aplus.jpg" alt="шаблон-а+">
-                <div class="grey">
-                  <p>A PLUS</p>
-                  <p>Лендинг курсов повышения квалификации</p>
-                  <button>9 900 руб.</button>
-                </div>
-              </a>
+            <li class="a-plus layouts">
+              <div class="upper-block"><span></span><span></span><span></span></div>
+              <img src="img/img-aplus.jpg" alt="шаблон-а+">
+              <div class="grey">
+                <p><a href="">A PLUS</a></p>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a href="" class="button-9900">9 900 РУБ.</a>
+              </div>
             </li>
-            <li>
-              <a href="">
-                <div class="upper-block"><span></span><span></span><span></span></div>
-                <img src="img/img-kvast.jpg" alt="шаблон-квас">
-                <div class="grey">
-                  <p>КВАСТ</p>
-                  <p>Промо-сайт производителя крафтового кваса</p>
-                  <button>9 900 руб.</button>
-                </div>
-              </a>
+            <li class="kvast layouts">
+              <div class="upper-block"><span></span><span></span><span></span></div>
+              <img src="img/img-kvast.jpg" alt="шаблон-квас">
+              <div class="grey">
+                <p><a href="">КВАСТ</a></p>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a href="" class="button-9900">9 900 РУБ.</a>
+              </div>
             </li>
           </ul>
           <div>
@@ -190,7 +178,7 @@
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p class="street">191186, Санкт-Петербург,</p>
           <p class="street">ул. Б. Конюшенная, д. 19/8</p>
-          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p>
+          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
           <a href="#" class="button-writetous">НАПИШИТЕ НАМ</a>
         </div>
       </div>
@@ -206,7 +194,7 @@
           </ul>
         </div>
         <div>
-          <p class="letsbefriends">Давайте дружить,это выгодно!</p>
+          <p class="letsbefriends">Давайте дружить, это выгодно!</p>
           <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
@@ -218,17 +206,16 @@
         <div class="flex-popap">
           <div class="form-column">
               <label for="nameandsurname" class="popap-name">Ваше имя:</label>
-                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия" class="name-surname">
+                <input id="nameandsurname" required type="text" name="nameandsurname" placeholder="Имя Фамилия" class="name-surname">
           </div>
           <div class="form-column">
               <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
-              <input id="user-login" type="text"
+              <input id="user-login" required type="text"
                name="login" placeholder="email@example.com" class="login">
           </div>
         </div>
           <label for="user-letter" class="popap-letter">Текст письма:</label>
-          <textarea id="" name="letter" placeholder="В свободной форме">
-          </textarea>
+          <textarea id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
         <button type="submit" class="button button-send">отправить</button>
       </form>
     </div>

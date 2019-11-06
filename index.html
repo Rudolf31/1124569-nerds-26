@@ -87,30 +87,28 @@
             </ul>
           </div>
           <div class="flex-aboutus2">
-            <img src="img/nerds-illustration.jpg">
+            <img src="img/nerds-illustration.jpg" alt="">
             <p class="since2004"> С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-            <ul class="percents">
-              <table class="table-percents">
-                <tr class="percents1">
-                  <td><li>146<sup>%</sup></li></td>
-                  <td><li>100<sup>%</sup></li></td>
-                  <td><li>50<sup>%</sup></li></td>
-                </tr>
-                <tr class="percents2">
-                  <td><li>Уровень самоотдачи</li></td>
-                  <td><li>Соблюдение сроков</li></td>
-                  <td><li>Минимальная предоплата</li></td>
-                </tr>
-              </table>
-            </ul>
+            <table class="table-percents percents">
+              <tr class="percents1">
+                <td>146<sup>%</sup></td>
+                <td>100<sup>%</sup></td>
+                <td>50<sup>%</sup></td>
+              </tr>
+              <tr class="percents2">
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
           </div>
         </section>
-        <section >
+        <section>
           <ul class="flex-company company-border">
-            <li class="company1"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1,1.png" class="company"></a></li>
-            <li class="company2"><a href=""><img src="img/logo-2,1.png" class="company"></a></li>
-            <li class="company3"><a href=""><img src="img/logo-3,1.png" class="company"></a></li>
-            <li class="company4"><a href="" class=""><img src="img/logo-4,1.png." class="company"></a></li>
+            <li class="company1"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" class="company" alt=""></a></li>
+            <li class="company2"><a href=""><img src="img/logo-2.png" class="company" alt=""></a></li>
+            <li class="company3"><a href=""><img src="img/logo-3.png" class="company" alt=""></a></li>
+            <li class="company4"><a href="" class=""><img src="img/logo-4.png." class="company" alt=""></a></li>
           </ul>
         </section>
     </div>
@@ -121,7 +119,7 @@
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p class="street">191186, Санкт-Петербург,</p>
           <p class="street">ул. Б. Конюшенная, д. 19/8</p>
-          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75<a></p>
+          <p class="aboutus1">тел.<a href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
           <a href="#" class="button-writetous">НАПИШИТЕ НАМ</a>
         </div>
       </div>
@@ -149,17 +147,16 @@
         <div class="flex-popap">
           <div class="form-column">
               <label for="nameandsurname" class="popap-name">Ваше имя:</label>
-                <input id="nameandsurname" type="text" name="nameandsurname" placeholder="Имя Фамилия" class="name-surname">
+                <input id="nameandsurname" required type="text" name="nameandsurname" placeholder="Имя Фамилия" class="name-surname">
           </div>
           <div class="form-column">
               <label for="user-login" class="popap-e-mail">Ваш e-mail:</label>
-              <input id="user-login" type="text"
+              <input id="user-login" required type="text"
                name="login" placeholder="email@example.com" class="login">
           </div>
         </div>
           <label for="user-letter" class="popap-letter">Текст письма:</label>
-          <textarea id="" name="letter" placeholder="В свободной форме">
-          </textarea>
+          <textarea id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
         <button type="submit" class="button button-send">отправить</button>
       </form>
     </div>

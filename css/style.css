@@ -332,6 +332,7 @@ margin-left: 45px;
   text-align: center;
   margin-top: 70px;
   padding-bottom: 108px;
+  margin-bottom: 50px;
 }
 
 .we1 {
@@ -391,7 +392,7 @@ margin-left: 45px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.5;
-  text-align: center;
+  margin-left: 16px;
   font-size: 16px;
   margin-bottom: 38px;
   margin-top: 30px;
@@ -403,29 +404,41 @@ margin-left: 45px;
   margin-right: 47px;
 }
 
-.percents1 li {
+.percents1 {
   font-weight: bold;
   font-size: 45px;
-  margin-bottom: 23px;
+  padding-bottom: 40px;
+}
+
+.percents1 td:nth-child(1) {
+  padding-right: 0px;
 }
 
 .percents1 td:nth-child(2) {
+  padding-right: 20px;
+  padding-left: 0px;
+}
+
+.percents2 td:nth-child(1) {
   padding-right: 22px;
-  padding-left: 18px;
 }
 
 .percents2 td:nth-child(2) {
-  padding-left: 20px;
+  padding-right: 0px;
 }
 
-.percents2 li  {
+.percents2 {
   font-weight: normal;
   font-size: 16px;
   width: 20px;
   line-height: 1.3;
 }
 
-li sup {
+.percents2 td {
+  padding-top: 28px;
+}
+
+.percents1 sup {
   font-size: 25px;
 }
 
@@ -507,6 +520,22 @@ li sup {
   display: flex;
   justify-content: center;
   margin: 54px 11px 0 0;
+  align-items: center;
+}
+
+.vk {
+  width: 26px;
+  height: 15px;
+}
+
+.fb {
+  width: 12px;
+  height: 22px;
+}
+
+.inst {
+  width: 21px;
+  height: 21px;
 }
 
 .social-icon:hover {
@@ -609,6 +638,7 @@ opacity: 0.3
 }
 
 .popap {
+  display: none;
   margin-left: 240px;
   width: 960px;
   height: 590px;
@@ -631,11 +661,18 @@ opacity: 0.3
   margin-bottom: 10px;
 }
 
+input:required:valid {
+  border: solid 2px #e74246;
+  color: #e74246;
+}
+
 .name-surname {
-  padding: 16px 45% 19px 16px;
+  padding: 15px 145px 15px 16px;
   border: solid 2px #d7dcde;
   border-radius: 3px;
   margin-bottom: 35px;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .name-surname:hover {
@@ -648,12 +685,13 @@ opacity: 0.3
   color: #444444;
 }
 
-
 .login {
-  padding: 16px 45% 19px 16px;
+  padding: 15px 145px 15px 16px;
   margin-left: 20px;
   border: solid 2px #d7dcde;
   border-radius: 3px;
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 .login:hover {
@@ -673,11 +711,15 @@ opacity: 0.3
 
 textarea {
   margin-top: 9px;
-  width: 99%;
+  width: 95.9%;
   min-height: 110px;
   border: solid 2px #d7dcde;
   border-radius: 3px;
   margin-bottom: 43px;
+  font-size: 16px;
+  font-family: Roboto;
+  padding-left: 12px;
+  line-height: 2.5;
 }
 
 textarea:hover {
@@ -695,6 +737,7 @@ textarea:focus {
 }
 
 .button-show {
+  margin-top: 20px;
   width: 260px;
   height: 50px;
   background-color: #e7e7e7;
@@ -742,7 +785,7 @@ textarea:focus {
 }
 
 .flex-aboutus2 {
-  margin-left: auto;
+  margin-left: 150px;
   margin-top: 20px;
 }
 
@@ -785,7 +828,18 @@ textarea:focus {
 .flex-layouts li {
   list-style: none;
   flex-wrap: wrap;
+  margin-bottom: 26px;
+  cursor: pointer;
 }
+
+.flex-layouts li:hover .upper-block {
+  opacity: 1
+}
+
+.flex-layouts li:hover .grey {
+  display: block;
+}
+
 .flex-layouts li:nth-child(odd) {
   margin-right: 40px;
 }
@@ -803,16 +857,40 @@ textarea:focus {
 }
 
 .upper-block span {
-  width: 25px;
-  height: 25px;
-  background-color: #000;
+  display: block;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
 }
 
-.a-plus {
+.upper-block span:nth-child(1) {
+  position: absolute;
+  left: 17px;
+  top: 13px;
+}
+
+.upper-block span:nth-child(2) {
+  position: absolute;
+  left: 39px;
+  top: 13px;
+}
+
+.upper-block span:nth-child(3) {
+  position: absolute;
+  left: 63px;
+  top: 13px;
+}
+
+.layouts {
+  position: relative;
 }
 
 .grey {
-  display: non;
+  display: none;
+  left: 0;
+  bottom: 0;
   position: absolute;
   width: 360px;
   height: 231px;
@@ -820,18 +898,18 @@ textarea:focus {
   text-align: center;
 }
 
-.a+:hover {
-  display: block;
+.grey p:nth-child(1) {
+  margin-bottom: 8px;
 }
 
-.grey p:nth-child(1) {
+.grey a:nth-child(1) {
   color: #000000;
   font-size: 18px;
   font-weight: bold;
-  padding-top: 30px;
+  line-height: 2.2;
 }
 
-.grey p:nth-child(1):hover {
+.grey a:nth-child(1):hover {
   color: #fb565a;
 }
 
@@ -839,13 +917,18 @@ textarea:focus {
   font-size: 16px;
   font-weight: normal;
   color: #666666;
-}
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  line-height: 1.3;
+  margin-bottom: 43px;
+ }
 
-.grey button {
+.button-9900 {
+  margin-left: 3px;
   background-color: #fb565a; 
-  width: 200px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16.5px 57px 14.5px 63px;
   border: none;
   border-radius: 3px;
   color: white;
@@ -888,7 +971,7 @@ textarea:focus {
   font-size: 18px;
   font-weight: bold;
   padding-left: 50px;
-  padding-top: 49px;
+  padding-top: 52px;
   padding-bottom: 25px;
   margin: 0;
 }
@@ -897,7 +980,7 @@ textarea:focus {
   margin: 0;
   color: rgb(102, 102, 102);
   padding-left: 50px;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 fieldset {
@@ -906,14 +989,23 @@ fieldset {
   margin-left: 0;
 }
 
-.form-menu {
+.form-menu1 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 60px;
+  margin-bottom: 11px;
+}
+
+.form-menu2 {
+  margin-top: 16px;
+  padding-top: 0px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .flex-popap {
   display: flex;
-  margin: 0 -20;
+  margin: 0;
 }
 
 .flex-popap .form-column {
@@ -922,7 +1014,6 @@ fieldset {
 }
 
 .form-input1 input {
-  top: 50px;
   border: 5px solid #4d4d4d;
   height: 25px;
   width: 25px;
@@ -940,10 +1031,8 @@ fieldset {
 }
 
 .cost {
-  margin-left: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 63px;
+  margin-bottom: 2px;
+  padding-top: 8px;
 }
 
 .sort {
@@ -954,14 +1043,18 @@ fieldset {
 .sort p {
   font-size: 18px;
   font-weight: bold;
-  margin-left: 40px;
-  margin-top: 60px;
+  margin-left: 0px;
+  margin-top: 0px;
+  line-height: 1.8;
 }
 
 .howtosort {
-  padding-left: 185px;
+  margin-left: 226px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .howtosort li {
@@ -987,13 +1080,17 @@ fieldset {
 .howtosort-triangle {
   display: flex;
   align-items: center;
-  margin-top: 63px;
+  margin-top: 0px;
+  margin-bottom: 35px;
 }
 
 .triangle {
   padding-left: 0;
   display: flex;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 1.8px;
 }
 
 .triangle-to-top a {
@@ -1021,8 +1118,8 @@ fieldset {
 }
 
 .triangle-to-buttom a {
-  margin-right: 18px;
-  margin-left: 20px;
+  margin-right: 17px;
+  margin-left: 21px;
   display: inline-block;
   width: 0; 
   height: 0;
@@ -1055,13 +1152,12 @@ fieldset {
 .nomber {
   font-size: 16px;
   font-weight: 500;
-  margin-top: 60px;
-  margin-bottom: 44px;
+  margin-top: 26px;
+  margin-bottom: 55px;
   margin-right: 11px;
 }
 
 .nomber-1 {
-  margin-left: 38px;
   border: solid 3px #dbdbdb;
   border-radius: 3px;
   padding: 14px 18px 13px 18px;
@@ -1354,8 +1450,7 @@ fieldset {
   text-align: right;
 }
 
-
-.visually-hidden2 {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1430,17 +1525,4 @@ fieldset {
 
 .filter-option1 label:hover::before {
   opacity: 1;
-}
-
-.visually-hidden1 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
