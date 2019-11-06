@@ -330,7 +330,7 @@ margin-left: 45px;
   font-weight: 500;
   line-height: 1;;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 75px;
   padding-bottom: 108px;
   margin-bottom: 50px;
 }
@@ -394,14 +394,14 @@ margin-left: 45px;
   line-height: 1.5;
   margin-left: 16px;
   font-size: 16px;
-  margin-bottom: 38px;
+  margin-bottom: 47px;
   margin-top: 30px;
   }
 
 .percents {
   list-style: none;
   padding-left: 0px;
-  margin-right: 47px;
+  margin-right: 0px;
 }
 
 .percents1 {
@@ -415,12 +415,16 @@ margin-left: 45px;
 }
 
 .percents1 td:nth-child(2) {
-  padding-right: 20px;
+  padding-right: 18px;
   padding-left: 0px;
 }
 
+.percents1 td:nth-child(3) {
+  margin-right: 0;
+}
+
 .percents2 td:nth-child(1) {
-  padding-right: 22px;
+  padding-right: 20px;
 }
 
 .percents2 td:nth-child(2) {
@@ -828,7 +832,7 @@ textarea:focus {
 .flex-layouts li {
   list-style: none;
   flex-wrap: wrap;
-  margin-bottom: 26px;
+  margin-bottom: 34px;
   cursor: pointer;
 }
 
@@ -971,7 +975,7 @@ textarea:focus {
   font-size: 18px;
   font-weight: bold;
   padding-left: 50px;
-  padding-top: 52px;
+  padding-top: 50px;
   padding-bottom: 25px;
   margin: 0;
 }
